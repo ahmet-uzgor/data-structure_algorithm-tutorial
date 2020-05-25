@@ -88,6 +88,22 @@ class LinkedList{
         this.length--
         return this.printList();
     }
+    printReverse(){
+        if(!this.head.next){
+            return this.head;
+        }
+        let first = this.head;
+        let second = first.next;
+        while(second){
+            const temp = second.next;
+            second.next = first;
+            first = second;
+            second = temp;
+        }
+        this.head.next = null;
+        this.head = first;
+        return this.printList();
+    }
 }
 
 const firstLinkedList = new LinkedList(1);
@@ -98,4 +114,4 @@ firstLinkedList.insert(50,77);
 firstLinkedList.insert(0,33);
 firstLinkedList.insert(3 ,26);
 firstLinkedList.remove(0); // it removes first item
-console.log(firstLinkedList.printList());
+console.log(firstLinkedList.printList(),firstLinkedList.printReverse());

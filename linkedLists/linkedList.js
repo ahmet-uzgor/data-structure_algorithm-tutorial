@@ -39,6 +39,19 @@ class LinkedList{
         this.length++;
         return this;
     }
+    lookup(index){
+        if(index===0){
+            return this.head;
+        }
+        let start = this.head;
+        let counter = 0
+        while(index===counter){
+            let next = start.next;
+            start = next;
+            counter++;
+            return next;
+        }
+    }
     printList(){ // it adds all value inside of nodes to arr1 and prints arr1
         const arr1 = [];
         let currentNode = this.head ;
@@ -48,7 +61,7 @@ class LinkedList{
         };
         return arr1;
     }
-    insert(index , value){
+    insert(index , value){ // O(n)
         //check parameters
         if(index === 0){
             return this.prepend(value);
@@ -63,7 +76,7 @@ class LinkedList{
         newNode.next = holdingPointer;
         this.length++;
     }
-    traverseToIndex(index){
+    traverseToIndex(index){ //O(n)
         let counter = 0;
         let currentNode = this.head ;
         while(counter !== index){
@@ -72,7 +85,7 @@ class LinkedList{
         }
         return currentNode;
     }
-    remove(index){
+    remove(index){ //O(n)
         //check parameters
         if(index === 0){
             this.head = this.head.next;
@@ -114,4 +127,6 @@ firstLinkedList.insert(50,77);
 firstLinkedList.insert(0,33);
 firstLinkedList.insert(3 ,26);
 firstLinkedList.remove(0); // it removes first item
-console.log(firstLinkedList.printList(),firstLinkedList.printReverse());
+console.log("Print list method result",firstLinkedList.printList());
+console.log("Lookup result for an element inside of Linked list",firstLinkedList.lookup(4))
+console.log("Printreverse list method result",firstLinkedList.printReverse());

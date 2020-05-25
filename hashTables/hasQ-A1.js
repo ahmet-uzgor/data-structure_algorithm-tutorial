@@ -23,6 +23,20 @@ function findRecurringObject(inputArray){ // it finds first recurring elmenent i
 };
 
 
-findRecurringObject(givenArray);
+findRecurringObject(givenArray); // solution time complexity => O(n) space complexity => O(n) because we need to save elements of given array until we found recurrent one
 
+// Below solution is not the good one but first solution that coming to mind
+function findRecurringObject2(inputArray){
+    for (let i=0 ; i< inputArray.length ; i++){
+        for(let j=0 ; j < inputArray.length ; j++){
+            if(inputArray[i] === inputArray[j]){
+                console.log('First recurring item in given array is %d' , inputArray[i]) // we print a message that yupppiii we have found
+                return input[i];
+            };
+        };
+    };
+};
+
+
+findRecurringObject2(givenArray); // solution time complexity => o(n^2) it is not good & space complexity is o(1) 
 

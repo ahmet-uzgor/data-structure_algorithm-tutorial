@@ -1,18 +1,4 @@
-/ linked list => 10 --> 5 --> 16
-
-// Basic Linked list creation
-let myDoublyLinkedList = {
-    head: {
-        value: 10,
-        next: {
-            value: 5,
-            next: {
-                value: 16,
-                next: null
-            }
-        }
-    }
-}
+//linked list => 10 --> 5 --> 16
 
 
 //Singly Linked list creation with classes
@@ -95,7 +81,7 @@ class DoublyLinkedList{
         }
         return currentNode;
     }
-    remove(index){
+    remove(index){ // Doubly feature will be added prev is missing
         //check parameters
         if(index === 0){
             this.head = this.head.next;

@@ -1,21 +1,4 @@
-// linked list => 10 --> 5 --> 16
-
-// Basic Linked list creation
-let myLinkedList = {
-    head: {
-        value: 10,
-        next: {
-            value: 5,
-            next: {
-                value: 16,
-                next: null
-            }
-        }
-    }
-}
-
-
-//Singly Linked list creation with classes
+//Doubly Linked list creation with classes
 class LinkNode{ // Creation nodes of Singly linkedList with classes
     constructor(value){
         this.value = value;

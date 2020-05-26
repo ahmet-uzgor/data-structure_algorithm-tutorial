@@ -48,3 +48,32 @@ myQueue.enqueue("Joy");
 myQueue.dequeue();
 console.log(myQueue.peek());
 console.log(myQueue);
+
+// Queues building with Arrays
+class Queue2{
+    constructor(){
+        this.array = [];
+        this.length = 0;
+    }
+    peek(){
+        return this.array[0]
+    }
+    enqueue(value){
+        this.array[this.length-1] = value;
+        this.length++;
+        return this;
+    }
+    dequeue(){
+        delete this.array[this.length-1];
+        this.length--;
+    }
+}
+
+const myQueue2 = new Queue2;
+myQueue2.enqueue("Veli");
+myQueue2.enqueue("Ali");
+myQueue2.enqueue("Selim");
+myQueue2.enqueue("Andrei");
+myQueue2.dequeue();
+console.log(myQueue2.peek());
+console.log(myQueue2);

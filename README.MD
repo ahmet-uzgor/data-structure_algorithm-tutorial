@@ -1,4 +1,4 @@
-CREATED BY AHMET UZGOR.
+#CREATED BY AHMET UZGOR.
 
 This repo is created to post data stucture & algorithm sample codes . 
 

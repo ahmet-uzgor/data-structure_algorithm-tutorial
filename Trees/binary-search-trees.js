@@ -40,7 +40,20 @@ class BinarySearchTrees{
         }
     }
     lookup(value){
-
+        if(!this.root){
+            return false;
+        }
+        let scanNode = this.root ;
+        while(scanNode){
+            if(value < scanNode.value){
+                scanNode = scanNode.left ;
+            }else if(value > scanNode.value){
+                scanNode = scanNode.right ;
+            }else if(scanNode.value === value){
+                return scanNode;
+            }
+        }
+        return false;
     }
 }
 
@@ -48,7 +61,12 @@ const newTree = new BinarySearchTrees();
 newTree.insert(15);
 newTree.insert(13);
 newTree.insert(17);
+newTree.insert(50);
+newTree.insert(12);
+newTree.insert(32);
 JSON.stringify(traverse(newTree.root));
+
+
 
 function traverse(node){
     const tree = {value: node.value};

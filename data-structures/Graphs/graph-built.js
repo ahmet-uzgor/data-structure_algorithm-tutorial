@@ -1,3 +1,7 @@
+// Note : Neo4j is one of the big graph database as a Service which is built via 
+// Graph Data structure --> https://neo4j.com/
+ 
+
 class Graph{ // Undirected - Unweighted Graph Creation
     constructor(){
         this.numberOfNodes = 0;

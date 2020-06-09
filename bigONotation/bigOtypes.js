@@ -18,7 +18,7 @@ function increaseNTimes(n){ // it increases a number as n times so it works n ti
     };
 };
 
-// 3. =(n^2) = rapidly increasing time / it works n*n times because of nested loops
+// 3. O(n^2) = rapidly increasing time / it works n*n times because of nested loops
 const numbers = [3,2,8,11,7,3,9,4] ;
 function sumOfEachPairs(numbers){ // it shows all sum of each pairs in array  . O(n^2) 
     for(let i=0 ; i<numbers.length ;i++){ // it works n times

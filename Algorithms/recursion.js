@@ -1,4 +1,4 @@
-// Recursive functions - Example Recursion 
+// Recursive functions - Example for Recursion 
 
 let counter = 0;
 function recursiveFunc(){

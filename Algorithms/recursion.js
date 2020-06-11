@@ -1,7 +1,7 @@
 // Recursive functions - Example for Recursion 
 
 let counter = 0;
-function recursiveFunc(){ // O(n)
+function recursiveFunc(){ // bigO of this function is O(n)
   console.log(counter);
   if(counter >3){
     return 'done!';

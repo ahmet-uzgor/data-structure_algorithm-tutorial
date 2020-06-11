@@ -31,7 +31,7 @@ function sumOfEachPairs(numbers){ // it shows all sum of each pairs in array  . 
 // 4. O(logN) = Trees bigO is O(logN) for lookup, insert & delete
 
 // 5. O(2^n) = exponentially increasing for recursion
-
+// Fibonacci function bigO is O(2^n)
 /*
 ----- BIG O NOTATION RULES -------    
 

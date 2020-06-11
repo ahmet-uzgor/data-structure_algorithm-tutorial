@@ -21,3 +21,6 @@ function findFibonacciIterative(){ // O(n) this solution  is better than recursi
 }
 
 console.log("Iterative solution answer is ", findFibonacciIterative(8));
+
+// TAIL CALL OPTIMIZATION does not call stack each time so it makes O(2^n) --> O(n)
+// https://hackernoon.com/es6-tail-call-optimization-43f545d2f68b

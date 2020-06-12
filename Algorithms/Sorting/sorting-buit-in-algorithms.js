@@ -1,5 +1,5 @@
 // There are thousands of sorting algorithms beside the built-in methods
-// BFS + DFS will be written in there
+// JS built-in method which is "sort" will be explained.
 
 const letters = ['a', 'f', 'b', 'z', 'c', 'e'];
 letters.sort() ; // This built-in methods sort the elements of arrays according to the Unicode points

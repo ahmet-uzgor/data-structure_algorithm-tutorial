@@ -1,4 +1,6 @@
 // Big O Notation- Big O types are listed below with its samples
+// Big O types and detail graph can be found at ==> https://www.bigocheatsheet.com/
+
 
 // 1. O(1) = constant time , notation / it works just as constant time
 inputs = [1,2,3,'a','B','s',5,6] ; // it can be increased number of inputs.
@@ -30,7 +32,10 @@ function sumOfEachPairs(numbers){ // it shows all sum of each pairs in array  . 
 
 // 4. O(logN) = Trees bigO is O(logN) for lookup, insert & delete
 
-// 5. O(2^n) = exponentially increasing for recursion
+// 5. O(nlogN) it comes with quick sort method it is good considering O(n^2)
+// Quick sort(except worst case) , Merge Sort time complexity is O(nlogN)
+
+// 6. O(2^n) = exponentially increasing for recursion
 // Fibonacci function bigO is O(2^n)
 /*
 ----- BIG O NOTATION RULES -------    

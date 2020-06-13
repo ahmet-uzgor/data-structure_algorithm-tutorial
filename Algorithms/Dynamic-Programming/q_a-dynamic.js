@@ -26,5 +26,16 @@ function memoizedFibonacci(){
     }
 };
 
+// Also with bottom-up approach we can find a solution for Fibonacci with O(n)
+function bottomUpFibonacci(n){
+    let answer = [0, 1];
+    for(let i=2; i <= n; i++){
+        answer.push(answer[i-1] + answer[i-2]);
+    }
+    return answer.pop();
+}
+
+
 const fasterFibonacci = memoizedFibonacci();
-console.log(fasterFibonacci(10)); // big O is O(n) because we don't need each time to calculate known results
+console.log("With closure", fasterFibonacci(10)); // big O is O(n) because we don't need each time to calculate known results
+console.log("Bottom up approach", bottomUpFibonacci(10));

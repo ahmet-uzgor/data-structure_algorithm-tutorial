@@ -10,7 +10,7 @@ const givenNumber3 = "12345665501";
 const givenNumber4 = "120000000012"
 
 
-function splitStringIntoKPart (givenNumber, k){
+function splitStringIntoKPart (givenNumber, k){ // it returns givenNumber string with k substring regarding conditions.
     let i= 0;
     let resultArray = [];
     while (i < givenNumber.length){

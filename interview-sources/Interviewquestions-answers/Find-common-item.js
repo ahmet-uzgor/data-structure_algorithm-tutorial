@@ -20,7 +20,7 @@
     return false
   }
 */  
-  //O(a*b)
+  //O(a*b) => O(n^2)
   //O(1) - Space Complexity
 
   const array1 = ['a','b','c','x','g'];
